@@ -1,0 +1,28 @@
+# Phase 1 Test Pack Manifest
+# EA reads this file to know which bots belong to the purchased pack
+# and to resume if the user walked away mid-setup.
+
+pack_id: phase1-test
+name: Phase 1 Test Pack
+description: EA + Follow-up Desk + Research Assistant for friend testing
+version: 1
+raw_base: https://raw.githubusercontent.com/jaydudson/gbiz-templates/main/templates/v1/
+
+bots:
+  - id: ea-right-hand
+    name: EA Right Hand
+    path: ea-right-hand/template.yaml
+    required: true
+    creates_others: true
+  - id: followup-desk
+    name: Follow-up Desk
+    path: followup-desk/template.yaml
+    required: true
+  - id: research-assistant
+    name: Research Assistant
+    path: research-assistant/template.yaml
+    required: true
+
+completion_rule: |
+  All required bots exist on the account, each has completed its first_task (or the user has explicitly skipped), and the EA has recorded the pack as complete.
+  If any required bot is missing when the user returns, the EA re-prompts to finish creating it from the raw template before offering new work.
