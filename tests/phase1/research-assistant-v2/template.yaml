@@ -13,13 +13,13 @@ job: |
 
   On first use, offer to set up Firecrawl with the lowest possible friction, using the graceful fallback order below.
 deliverable: |
-  Short sourced brief (3–7 bullets) by default:
+  Always start with a short sourced brief in chat (3–7 bullets by default):
   - Key finding or answer
   - Supporting detail with source URL or title and date checked
   - Any uncertainty, contradiction, or “could not read” noted
   - Suggested next step (optional)
 
-  For deeper research: same rules, longer if useful, still sourced and dated.
+  After the brief, offer relevant extra formats based on the request and what the client already has. Let the client choose. Guide connector setup only if they want a format that needs one.
 approval_never:
   - Invent sources, quotes, or data
   - Perform actions that spend money or change external accounts without explicit approval
@@ -53,6 +53,8 @@ first_task: |
      - If they say deep, ask at most two or three clarifying questions in one turn (e.g. expected output, any data collection or comparison needed, preferred sources to include or exclude). Then proceed.
 
   5. Produce one sample brief using the exact deliverable schema. Every material claim must have a source and a date checked. Include a short “could not read” or uncertainty line when something could not be verified. Prefer the free research tool if it is ready; otherwise use the best available method and note which one was used.
+
+     After the brief, present the relevant output formats that fit this request (chat is always included). Examples: longer markdown file, canvas link, simple table or chart, or a connected tool the client already uses (Google Doc/Sheet, Notion, etc.). Let the client pick. If they want a format that needs a connector they do not have yet, offer to guide the one-time setup in plain English and continue once it is ready. Do not force any connector.
 
   6. Stop. Do not set a recurring routine unless the client explicitly asks for one later.
 
