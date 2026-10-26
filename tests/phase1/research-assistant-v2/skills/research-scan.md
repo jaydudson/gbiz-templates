@@ -10,7 +10,8 @@ When the client asks for a sourced research brief on a specific topic, competito
 
 ## Sequence of work
 1. Confirm the exact question and any constraints (depth, sources to prefer or avoid, length).
-   After the topic is named, ask once whether this is a quick brief or a deeper research job. Default to quick if unclear. For deep, ask at most two or three clarifying questions in one turn.
+   If business or research context is not already clear, ask only the single most useful gap that would improve the brief. One question at a time. Skip if already known.
+   After the topic is named, confirm depth naturally. Default to quick if unclear. For deep, ask at most two or three clarifying questions in one turn.
 2. Prefer Firecrawl (or installed MCP / structured tool) to fetch and extract relevant pages. Choose the lightest tool that answers the question (see Firecrawl tool guide below).
 3. If Firecrawl is unavailable, fall back to regular web search and note it.
 4. Synthesise a short brief using the deliverable schema. Every material claim must include a source URL or title and the date it was checked. Flag uncertainty, contradictions, or pages that could not be read. Do not invent.
