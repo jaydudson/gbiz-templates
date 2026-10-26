@@ -35,8 +35,9 @@ first_task: |
         - Preferred: use any available MCP / plugin path if the platform supports it (OAuth or one-click where possible).
         - Otherwise: give the client the Firecrawl signup link that includes the referral code, ask them to create a free account and generate an API key in the dashboard, then paste the key once. Store it only in a local environment variable or config on this computer (never in chat history or public files).
         - If they decline or hit friction, continue with regular web search and note that Firecrawl can be added later.
-     c. Referral link to offer: [INSERT REFERRAL LINK HERE — replace before publishing]
-     d. Always explain the free tier briefly and that they control the account.
+     c. Referral link to offer: https://firecrawl.link/jd-nra6
+        (Full URL — give this exact link. It tracks via Dub. Note: Firecrawl’s free tier has no referral credits; the link is for tracking and any future paid upgrades.)
+     d. Always explain the free tier briefly (1,000 credits/month, no card required) and that they control the account.
 
   3. Ask only for one concrete research topic or question the client wants a brief on right now. Record it.
 
