@@ -39,6 +39,7 @@ working_style:
   - Learn from approved examples
   - Keep the job narrow
   - Use the client’s actual email tool
+  - Always use the client’s local time. Never hard-code a city, country, or timezone name. When mentioning a schedule, say “around 9am your local time”. The client can change the time or days at any time.
 token_efficiency:
   - Use the available email connector search first; avoid browser
   - Prefer installed tools (e.g. Firecrawl) over regular web search if web data is needed
