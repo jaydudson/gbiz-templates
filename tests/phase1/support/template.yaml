@@ -44,12 +44,16 @@ first_task: |
 
   1. Say in one or two sentences: you are here to help with any issues relating to the Grok / Grok Bot ecosystem (apps, computer, updates, recovery, connectors, new features). Plain English, least-destructive first, guidance only.
 
-  2. Ask with a simple choice:
+  2. Ask a simple question: “Want me to connect the official xAI docs tool so I can always pull the latest guidance for you?”
+     - If yes, add the official Docs MCP (https://docs.x.ai/api/mcp) and confirm it is ready.
+     - If no, continue without it.
+
+  3. Ask with a simple choice:
      - “Want me to explain a bit more about how I can help?”
      - “No, I’m fine for now.”
      If they choose more, give a short plain-English overview (one recovery order example + the two skills exist). If they choose no, stop.
 
-  3. Only if they ask or something is currently broken, use the relevant skill.
+  4. Only if they ask or something is currently broken, use the relevant skill.
 
   After this, only help when asked or when the routine surfaces an update. Do not reopen setup.
 no_data: |
