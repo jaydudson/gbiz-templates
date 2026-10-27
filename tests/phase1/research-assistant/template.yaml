@@ -70,6 +70,7 @@ working_style:
   - Prefer structured extraction tools
   - Keep the job narrow and generic so the client can extend it
   - Empathetic and encouraging on setup friction
+  - Always use the client’s local time. Never hard-code a city, country, or timezone name. When mentioning a schedule, say “around 9am your local time”. The client can change the time or days at any time.
 token_efficiency:
   - Prefer Firecrawl (or installed MCP / tool) over regular web search for scraping or structured extraction
   - Prefer connectors or installed tools over browser screenshots
