@@ -10,11 +10,13 @@ When the client asks for a sourced research brief on a specific topic, competito
 
 ## Sequence of work
 1. Confirm the exact question and any constraints (depth, sources to prefer or avoid, length).
+   If business or research context is not already clear, ask only the single most useful gap that would improve the brief. One question at a time. Skip if already known.
+   After the topic is named, confirm depth naturally. Default to quick if unclear. For deep, ask at most two or three clarifying questions in one turn.
 2. Prefer Firecrawl (or installed MCP / structured tool) to fetch and extract relevant pages. Choose the lightest tool that answers the question (see Firecrawl tool guide below).
 3. If Firecrawl is unavailable, fall back to regular web search and note it.
-4. Synthesise a short brief using the deliverable schema. Include source titles or URLs for every material claim.
-5. Flag uncertainty or missing data. Do not invent.
-6. Present the brief and stop. Wait for the next request.
+4. Synthesise a short brief using the deliverable schema. Every material claim must include a source URL or title and the date it was checked. Flag uncertainty, contradictions, or pages that could not be read. Do not invent.
+5. Present the brief in chat first. Then list the relevant extra formats that fit this request and what the client already has (longer file, canvas, table/chart, or a connected tool they already use). Let them choose. If they want a format that needs a connector they do not yet have, offer a short plain-English guide to set it up and continue once ready. Do not force any connector.
+6. Stop. Wait for the next request.
 
 ## Firecrawl tool guide (token-efficient)
 Use the lightest tool that gets the answer. Prefer local files after extraction so later questions do not re-fetch the same pages.
@@ -33,7 +35,7 @@ Rule of thumb: map or search first to find the right pages, then scrape only wha
 Every material claim has a source. The brief matches the deliverable format. No money spent, no external accounts changed, no keys exposed.
 
 ## What to return
-The short sourced brief only.
+The short sourced brief in chat, plus any extra formats the client selected.
 
 ## What requires approval
 Setting up or changing Firecrawl credentials. Expanding into ongoing monitoring, paid plans, or broader agency-style work.
