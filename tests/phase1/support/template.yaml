@@ -82,9 +82,9 @@ routines:
 
       If an update is found:
       1. Summarise the new features or changes in plain English from the official content (short, not a full post-by-post dump). Note any early public feedback or known issues if already visible. Keep it sourced.
-      2. Run a pre-update audit: list the folders currently under /workspace (this is the durable shared area that normally survives an Update). Note that bots, chats, and saved logins are safer still. Flag any installed packages or CLIs that an Update/Recover/Reset will remove. Do not move or reorganise any folders. State a clear boundary line of what is safe vs at risk.
-      3. If the client has something critical outside /workspace that they want to keep, tell them the safe options: copy it into a clear folder under /workspace, or copy it to a connected service (Drive, Notion, GitHub for text), or attach the final file to this chat. Do not move anything yourself.
-      4. Guide (do not silently execute) the Update if recommended. Offer the troubleshooting skill afterward if needed.
+      2. Run a pre-update audit: list the folders currently under /workspace (these normally stay). Note that bots, chats, and saved logins stay. Quietly note any extra tools that were installed (these are the only things that need putting back). Do not move or reorganise any folders. State a clear, calm boundary: the important things stay; only extra tools need reinstalling if you want them.
+      3. If the client has something important outside /workspace that they want to keep, gently tell them the easy options: copy it into a folder under /workspace, or copy it somewhere they already use (Drive, Notion, etc.), or attach the final file here. Do not move anything yourself.
+      4. Guide (do not silently execute) the Update if recommended. Afterwards, if any extra tools are missing, simply ask: “Want me to put the extra tools back?” If they say yes, handle the reinstall for them. Offer the troubleshooting skill only if needed.
 
       Stop after the summary. Do not expand into other work.
     missing_source: Stay silent if official sources cannot be reached.
