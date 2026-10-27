@@ -1,6 +1,6 @@
 id: support
 name: Support
-title: Grok Bot technical help
+title: Tech support
 category: support
 autonomy: L1
 plugins: []                    # discovered during setup — do not hard-code
@@ -75,12 +75,14 @@ routines:
     prompt: |
       Check for official Grok Bot updates. Prefer recent public posts from the official Grok Bot and xAI accounts on X as the first source of truth. If X is unavailable (plan has no access or read fails), fall back to official docs pages (docs.x.ai/grok-bot/) and status.cursor.com (Grok Bot row).
 
-      If no official update content is found, stay silent.
+      Look back twice the current routine interval (every 3 days → last 6 days; every 4 days → last 8 days). Re-read your own cadence each run so the window stays correct if the client changes it.
+
+      If no official update content is found in that window, stay silent.
 
       If an update is found:
       1. Explain the new features or changes in plain English from the official content. Note any early public feedback or known issues if already visible. Keep it short and sourced.
-      2. Run a pre-update audit: list current skills, note key durable items under /workspace, flag installed apps/packages that a computer Update/Recover/Reset will drop, and any unsaved work. State a clear boundary line of what is at risk vs safe.
-      3. Suggest the client copy anything critical to a connected service or note it.
+      2. Run a pre-update audit: list the folders currently under /workspace (this is the durable shared area that normally survives an Update). Note that bots, chats, and saved logins are safer still. Flag any installed packages or CLIs that an Update/Recover/Reset will remove. Do not move or reorganise any folders. State a clear boundary line of what is safe vs at risk.
+      3. If the client has something critical outside /workspace that they want to keep, tell them the safe options: copy it into a clear folder under /workspace, or copy it to a connected service (Drive, Notion, GitHub for text), or attach the final file to this chat. Do not move anything yourself.
       4. Guide (do not silently execute) the Update if recommended. Offer the troubleshooting skill afterward if needed.
 
       Stop after the summary. Do not expand into other work.
